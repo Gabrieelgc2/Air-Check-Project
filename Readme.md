@@ -35,7 +35,7 @@ The **Air Check** project is an application for monitoring indoor air quality. I
 <img alt="Air Check" src="./assets/Air_Check_About.png">
 <hr>
 
-- **The image shows the “About” section of the app. Here, users can into the purpose of the application, learn about the development team, explore the technologies used.**
+- **The image shows the “About” section of the app. Here, users can go into the purpose of the application, learn about the development team, explore the technologies used.**
 
 <hr>
 
