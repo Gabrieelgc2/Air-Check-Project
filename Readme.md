@@ -17,10 +17,13 @@ The **Air Check** project is an application for monitoring indoor air quality. I
    - [View Storyboards](https://www.canva.com/design/DAGPbmRTUP8/Na02R1fYH_BTh3oBDriFkA/edit)
 
 
-4. **Screenshots of the Board and Backlog (JIRA) in the README**
+3. **Screenshots of the Board and Backlog (JIRA) in the README**
    - [View board screenshot](https://photos.google.com/share/AF1QipPZgEBV-bfVaTrheYdVAacwTxp-Vnxg1Gp6GgrLrAaY-7hY7buwf3Gw4fMGp703PA?key=VzFMbUVQNEJJX2FLZnJmZjB4WXBwaWswbk9rMzh3)
    - [View backlog screenshot](https://photos.google.com/share/AF1QipOwZwLRswJ_NlKKxuW-St5EbQo4-mAwp0rUM2s1s6NrFJ1fS899owJ_AdnTLNHzVw?key=dFIwcjBPbUpmUnU0VEV0bTk5QUhXVk51U3RSamJB)
 
+4. **Air Check's screencast**<br>
+   - [Screen cast](https://drive.google.com/file/d/17lv6vka524T4o-mk9uObwuvquenCncN7/view?pli=1)
+   
 ## Screenshot
 
 ### Air Check Home
