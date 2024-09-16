@@ -61,4 +61,3 @@ The **Air Check** project is an application for monitoring indoor air quality. I
 - **The footer is an essential part of the interface. It may contain links to other app sections, contact information, credits for the development team, or even links to project-related social media.**
 
 <hr>
->>>>>>> 7c35b0a60198250c88b4fee087eb1a62ce1282a6
