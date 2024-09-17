@@ -1,7 +1,3 @@
-
-
----
-
 # Air Check Project
 
 ## Description
