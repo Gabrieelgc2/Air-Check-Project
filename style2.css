@@ -46,3 +46,20 @@
 #textotitulo{
     color: #193655;
 }
+
+#news_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    margin: 15px;
+    max-width: 30%;
+}
+
+@media(max-width: 768px) {
+    .card {
+        max-width: 100%;
+    }
+}
