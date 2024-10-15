@@ -1,5 +1,5 @@
 """
-ASGI config for API_DJANGO_AIRCHECK project.
+ASGI config for air_check_project project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'API_DJANGO_AIRCHECK.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'air_check_project.settings')
 
 application = get_asgi_application()

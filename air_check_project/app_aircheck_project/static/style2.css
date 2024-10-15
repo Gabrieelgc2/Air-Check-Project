@@ -1,0 +1,49 @@
+@font-face {
+    font-family: Montserrat-VariableFont_wght;
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+.logo{
+    font-family: Montserrat-VariableFont_wght;
+    font-size: large;
+}
+#nome{
+    color: #193655;
+}
+
+#air{
+    font-size: large;
+}
+
+#fotohome{
+    width: 60%;
+    margin-top: 5%;
+    border-radius: 30%;
+}
+
+.inicio{
+    display: flex;
+
+}
+
+#textohome{
+    font-family: Montserrat-VariableFont_wght;
+    margin-left: 5%;
+    margin-top: 20%;
+    justify-content: center;
+}
+
+#botao{
+    border-color: #193655;
+    background-color: #193655;
+}
+
+#botaoprocurar{
+    border-color: #193655;
+    background-color: #193655;
+}
+
+#textotitulo{
+    font-size: medium;
+    color: #193655;
+}
