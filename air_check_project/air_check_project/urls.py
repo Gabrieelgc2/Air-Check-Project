@@ -20,5 +20,7 @@ from app_aircheck_project import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
-    path('Airchecking',views.teste, name='aircheck')
+    path('Airchecking',views.teste, name='aircheck'),
+    path('news', views.news, name='news'),
+    path('about', views.about, name='about')
 ]
