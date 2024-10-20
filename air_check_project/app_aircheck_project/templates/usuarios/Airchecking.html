@@ -3,121 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     {% load static %}
     <link rel="stylesheet" href="{% static './font-awesome.min.css' %}">
     <link rel="stylesheet" href="{% static './bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static './all.min.css' %}">
-    <link rel="stylesheet" href="{% static './style2.css' %}">    
+    <link rel="stylesheet" href="{% static './all.min.css' %}"> 
+    <link rel="stylesheet" href="{% static './airchecking.css' %}">
     <title>Air Check</title>
 </head>
-<div id="pagina">
 <body id="corpohome">
-    <div class="container">
-        <div class="row">
-            <div class="col text-start">
-                <h1>
-                  <!-- <i class="fa-solid fa-wind"></i>-->
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wind" viewBox="0 0 16 16">
-                    <path d="M12.5 2A2.5 2.5 0 0 0 10 4.5a.5.5 0 0 1-1 0A3.5 3.5 0 1 1 12.5 8H.5a.5.5 0 0 1 0-1h12a2.5 2.5 0 0 0 0-5m-7 1a1 1 0 0 0-1 1 .5.5 0 0 1-1 0 2 2 0 1 1 2 2h-5a.5.5 0 0 1 0-1h5a1 1 0 0 0 0-2M0 9.5A.5.5 0 0 1 .5 9h10.042a3 3 0 1 1-3 3 .5.5 0 0 1 1 0 2 2 0 1 0 2-2H.5a.5.5 0 0 1-.5-.5"/>
-                  </svg>
-                  <span class="logo" id="nome">AIR CHECK</span>
-                </h1>
-            </div>
-            <div class="col-lg-4">
+  <header class="header">
+    {% load static %}
+    <div class="logo">
+    <img src="{% static 'imgs/logo.png' %}" alt="Logo Air Checking" class="logoair">
+     <h1>Air Check</h1>
+    </div>
+    <nav class="nav-links">
+      <ul>
+        {% load static %}
+        <li><a href="{% url 'home' %}" class="hover1">Home</a></li>
+        <li><a href="{% url 'about' %}" class="hover2">About</a></li>
+        <li><a href="{% url 'news' %}" class="hover3">News</a></li>
+        <li><a href="{% url 'aircheck' %}" class="checar">Check the air</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" href="#"></a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                          <li style="padding-inline: 7%;">
-                            <a class="nav-link active" aria-current="page" href="{% url 'home' %}">HOME</a>
-                          </li>
-                        
-                          <li style="padding-inline: 7%";>
-                            <a class="nav-link active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                ABOUT
-                            </a>
-                          </li>
-                          <li style="padding-inline: 7%"> 
-                            <a class="nav-link active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                NEWS
-                            </a>
-                          </li>
-                          <li style="padding-inline: 7%">
-                            <a class="nav-link active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                FOOTER
-                            </a>
-                          </li>
-                          <li style="padding-inline: 7%">
-                            <a class="nav-link active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                AIR CHECKING
-                            </a>
-                          </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                          <button class="btn btn-secondary" type="submit" id="botaoprocurar">
-                            <!-- <i class="fa fa-search"></i> -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                            </svg>
-                          </button>
-                        </form>
-                      </div>
-                    </div>
-                  </nav>
-            </div>
-        </div>
-        
-
-
-        <div class="container container-info mt-5">
-            <img src="{% static 'imgs/Mapa.png' %}" class="image-world">
-          <h1 class="text-center mb-4">CHECK HERE</h1>
-          <!-- <img src="{% static 'imgs/Mapa.png' %}"> -->
-          <div class="row mb-4 box-input">
-              <div class="col-md-6 offset-md-3">
-                  <div class="input-group">
-                      <span class="input-group-text bg-white border-0">
-                          <i class="bi bi-search text-danger"></i>
-                      </span>
-                      <input type="text" class="form-control search-bar" placeholder="Search a location...">
+    <section id="air-checking">
+      <div class="container">
+          <h2>Air Checking</h2>
+          <div class="search-box">
+              <input type="text" placeholder="Search location..." id="location-input">
+              <button>Search</button>
+          </div>
+          <div class="location-image">
+            {% load static %}
+              <img src="{% static 'imgs/Mapa-Mundiii.jpg' %}" alt="Location" id="location-image">
+              <div class="overlay">
+                  <p>Showing data for: <span id="location-name">Selected Location</span></p>
+              </div>
+          </div>
+          <div class="data-display">
+              <h3>Data Overview</h3>
+              <div class="data-grid">
+                  <div class="data-box">
+                      <span>Air Pollution</span>
+                      <p id="pollution-level">35 µg/m³</p>
+                  </div>
+                  <div class="data-box">
+                      <span>Air Quality</span>
+                      <p id="air-quality">Good</p>
+                  </div>
+                  <div class="data-box">
+                      <span>Main Pollutant</span>
+                      <p id="main-pollutant">PM2.5</p>
+                  </div>
+                  <div class="data-box">
+                      <span>Wind</span>
+                      <p id="wind">12 km/h</p>
+                  </div>
+                  <div class="data-box">
+                      <span>Humidity</span>
+                      <p id="humidity">65%</p>
+                  </div>
+                  <div class="data-box">
+                      <span>Temperature</span>
+                      <p id="temperature">22°C</p>
                   </div>
               </div>
           </div>
-
-              <div class="col-md-4 container-output">
-                  <h5 class="text-danger">Air pollution</h5>
-                  <!-- <input type="text" class="form-control mb-2"> -->
-                  <h5 class="text-danger">Air quality</h5>
-                  <!-- <input type="text" class="form-control mb-2"> -->
-                  <h5 class="text-danger">Main Pollutant</h5>
-                  <!-- <input type="text" class="form-control"> -->
-
-                  <h5 class="text-danger">Wind</h5>
-                  <!-- <input type="text" class="form-control mb-2"> -->
-                  <h5 class="text-danger">Humidity</h5>
-                  <!-- <input type="text" class="form-control mb-2"> -->
-                  <h5 class="text-danger">Temperature</h5>
-                  <!-- <input type="text" class="form-control"> -->
-              </div>
       </div>
+  </section>
 
 
+<!-- 
+  <div id="reunir">
+    <section class="weather-details">
+      <div class="weather-card">
+        <div class="temperature-section">
+          <h2 class="current-temperature">24°C</h2>
+          <div class="feels-like-wrapper">
+            <span class="feels-like-label">Feels like:</span>
+            <span class="feels-like-temp">22°C</span>
+          </div>
+          <div class="sun-times">
+            <div class="sun-icons">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a127c39b4117f5c5351d5e6ecc3fc9dad58a0e7054e45aade2cac5a5e2098529?placeholderIfAbsent=true&apiKey=baba2908af8f42f08afcd99bca5ce1e2" alt="Sunrise icon" class="sun-icon" />
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b746baf976d70b23b6eb7bc3b0b060e90397fdb158e87848c87c7447bd56748a?placeholderIfAbsent=true&apiKey=baba2908af8f42f08afcd99bca5ce1e2" alt="Sunset icon" class="sun-icon sunset-icon" />
+            </div>
+            <div class="sun-times-text">
+              <span class="visually-hidden">Sunrise</span>
+              <span class="sun-time">06:37 AM</span>
+              <span class="sunset-label">Sunset</span>
+              <span class="sunset-time">20:37 AM</span>
+            </div>
+          </div>
+        </div>
+        <div class="weather-type">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f8237d4902d28dbb2363a7a379bf268a65c1f0df885e48b622e1390d1af9fadc?placeholderIfAbsent=true&apiKey=baba2908af8f42f08afcd99bca5ce1e2" alt="Sunny weather icon" class="weather-icon" />
+          <span class="weather-description">Sunny</span>
+        </div>
+        <div class="weather-stats">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/780ed122cdf92d4467d0c3719755e481c6725186282cc6de356bb5dcba58e321?placeholderIfAbsent=true&apiKey=baba2908af8f42f08afcd99bca5ce1e2" alt="Humidity icon" class="weather-stat-icon" />
+          <span class="humidity-value">41%</span>
+          <span class="weather-stat-label">Humidity</span>
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/51894940533f1e0644c768a772099e7938dd57464205ed8046e19105d0e74448?placeholderIfAbsent=true&apiKey=baba2908af8f42f08afcd99bca5ce1e2" alt="Pressure icon" class="pressure-icon" />
+          <span class="pressure-value">997hPa</span>
+          <span class="pressure-label">Pressure</span>
+        </div>
+        <div class="wind-uv-stats">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/566a9b14e62dc39ba50e8c0ab2f2d705cb500fdab985cdc7446f6777a9ca2d20?placeholderIfAbsent=true&apiKey=baba2908af8f42f08afcd99bca5ce1e2" alt="Wind speed icon" class="wind-icon" />
+          <span class="wind-speed">2km/h</span>
+          <span class="wind-label">Wind Speed</span>
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/211cd801c660e565bfe98eae270c083550f15cd7f99e23e38a036f95201b5e1d?placeholderIfAbsent=true&apiKey=baba2908af8f42f08afcd99bca5ce1e2" alt="UV index icon" class="uv-icon" />
+          <span class="uv-value">8</span>
+          <span class="uv-label">UV</span>
+        </div>
+      </div>
+    </section>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-</div>
-</body>
+    <section class="location-time-date">
+      <div class="date-time-info">
+        <div class="info-container">
+          <h2 class="location">Athens</h2>
+          <time class="time">09:03</time>
+          <p class="date">Thursday, 31 Aug</p>
+        </div>
+      </div>
+    </section>
+
+    <form class="search-container" role="search">
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1d44ac2f3f607e19adfa6a9fa26e9dfe9ba973db9db586f5a6c7d7ae78750b6c?placeholderIfAbsent=true&apiKey=80d6f5243ad8400783873c4141d93aee" class="search-icon" alt="" />
+      <label for="city-search" class="visually-hidden">Search for your preferred city</label>
+      <input type="text" id="city-search" class="search-input" placeholder="Search for your preferred city..." aria-label="Search for your preferred city" />
+    </form>
+  </div> -->
+  </body>
 </html>

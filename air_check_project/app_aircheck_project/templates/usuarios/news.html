@@ -3,9 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste</title>
+    <title>Air Check</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static './font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static './bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static './all.min.css' %}">
+    <link rel="stylesheet" href="{% static './noticias.css' %}">  
+    <link rel="stylesheet" href="{% static './homestyle.css' %}">
 </head>
-<body>
-    
+
+<body id="corpohome">
+    <header class="header">
+        <div class="logo">
+        <img src="{% static 'imgs/logo.png' %}" alt="Logo Air Checking" class="logoair">
+            <h1>Air Check</h1>
+        </div>
+        <nav class="nav-links">
+          <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'news' %}">News</a></li>
+            <li><a href="{% url 'aircheck' %}" class="checar">Check the air</a></li>
+          </ul>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <h1 class="text-center my-4">Latest Air Quality News</h1>
+
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100" style="margin-left: 6px; margin-right: 6px;">
+                    <img src="{% static 'imgs/news_image1.jpg' %}" class="card-img-top" alt="Air Pollution">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Pollution in Cities</h5>
+                        <p class="card-text">A new report highlights increasing air pollution levels in cities worldwide. Find out how this could affect your health.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100" style="margin-left: 6px; margin-right: 6px;">
+                    <img src="{% static 'imgs/news_image2.jpg' %}" style="width: 100%;" class="card-img-top" alt="Air Quality Monitoring">
+                    <div class="card-body">
+                        <h5 class="card-title">New Air Quality Monitoring Systems</h5>
+                        <p class="card-text">Advanced air quality monitoring systems are being introduced in various cities to track pollution levels in real time.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100" style="margin-left: 6px; margin-right: 6px;">
+                    <img src="{% static 'imgs/news_image3.jpg' %}" style="width: 100%;" class="card-img-top" alt="Health Impact of Air Quality">
+                    <div class="card-body">
+                        <h5 class="card-title">Health Impact of Poor Air Quality</h5>
+                        <p class="card-text">Doctors warn about the long-term health effects of prolonged exposure to polluted air. Learn more about the risks and preventive measures.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
