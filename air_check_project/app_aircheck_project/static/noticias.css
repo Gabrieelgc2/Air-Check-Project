@@ -1,0 +1,136 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; 
+}
+
+.navbar {
+    background-color: #193655;
+    padding: 1rem;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center; 
+}
+
+.navbar-brand i {
+    font-size: 1.5rem; 
+    color: #fff;
+}
+
+.navbar-brand .logo {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center; 
+}
+
+.nav-link {
+    color: white;
+    margin-right: 1rem;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #e9ecef;
+}
+
+.navbar .btn {
+    background-color: #e9ecef;
+    color: #193655;
+    border-radius: 20px;
+}
+
+.navbar .btn:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.container {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+}
+
+.text-section h2 {
+    color: #193655;
+    font-size: 1.75rem;
+}
+
+.text-section p {
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.btn-primary {
+    background-color: #193655;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+    color: white;
+    margin-top: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: #007bff;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #193655;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .text-section {
+        margin: 0;
+        text-align: center;
+    }
+
+    .text-section h2 {
+        font-size: 1.5rem;
+    }
+}
