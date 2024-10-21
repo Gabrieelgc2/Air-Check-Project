@@ -17,7 +17,6 @@ body #corpohome {
   max-width: 100%; 
   margin: 0;
   box-sizing: border-box;
-  
 }
 
 .header a {
@@ -68,12 +67,6 @@ body #corpohome {
   color: #d4e2eb;
   font-weight: bold;
   transition: background-color 0.3s ease;
-}
-
-.checar{
-  border-radius: 20px;
-  background-color: #abadc2;
-  
 }
 
 h1{
