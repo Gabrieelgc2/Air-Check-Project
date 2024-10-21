@@ -41,7 +41,8 @@
                 <p><strong>E-mail:</strong> aircheck@gmail.com</p>
             </div>
             <div class="form-section">
-                <form action="#" method="post">
+                <form method="post">
+                    {% csrf_token %}
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required>

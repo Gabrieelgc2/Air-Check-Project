@@ -68,10 +68,6 @@ body #corpohome {
     transition: background-color 0.3s ease;
 }
 
-.checar:hover{
-    border-radius: 20px;
-}
-
  h1{
     margin-left: 20px;
     font-size: 26px;
@@ -189,3 +185,12 @@ body #corpohome {
         text-align: center;
     }
 }
+
+a {
+    transition: background-color 0.5s;
+  }
+  
+  a:hover {
+    background-color: #005bb5;
+    border-radius: 50px;
+  }
