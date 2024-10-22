@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #ffffff;
 }
 .container {
@@ -30,10 +30,11 @@ header {
 .about {
     flex: 1;
     padding: 20px;
-    background-color: #06BEE1;
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 0px;
+    font-weight: bold;
 }
 
 .about h2 {
@@ -55,7 +56,7 @@ strong {
 .form-section {
     flex: 1;
     padding: 20px;
-    background-color: #06BEE1;
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-left: 20px;
@@ -74,7 +75,7 @@ label {
 input, textarea {
     width: 100%;
     padding: 10px;
-    border: 2px solid #1e3c72;
+    border: 2px solid #193655;
     border-radius: 5px;
     font-size: 14px;
 }
@@ -84,11 +85,11 @@ textarea {
 }
 
 button {
-    padding: 10px 20px;
-    background-color: #03256C;
+    padding: 8px 15px;
+    background-color:  #193655;
     color: #ffffff;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
 }
 
@@ -115,4 +116,76 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 50px;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links ul li {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 40px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links ul li a {
+        margin: 10px 0;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links ul {
+        width: 100%;
+    }
+
+    .nav-links ul li a {
+        margin: 1px 0;
+        padding: 12px 20px;
+        width: 100%;
+        text-align: center;
+    } 
 }

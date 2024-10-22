@@ -40,36 +40,40 @@
           <div class="location-image">
             {% load static %}
               <img src="{% static 'imgs/Mapa-Mundiii.jpg' %}" alt="Location" id="location-image">
-              <div class="overlay">
-                  <p>Showing data for: <span id="location-name">Selected Location</span></p>
-              </div>
+
           </div>
           <div class="data-display">
               <h3>Data Overview</h3>
               <div class="data-grid">
                   <div class="data-box">
-                      <span>Air Pollution</span>
-                      <p id="pollution-level">35 µg/m³</p>
+                    <span>Air Pollution</span>
+                    <p id="pollution-level">35 µg/m³</p>
                   </div>
                   <div class="data-box">
-                      <span>Air Quality</span>
-                      <p id="air-quality">Good</p>
+                    <span>Air Quality</span>
+                    <p id="pollution-level">Good</p>
                   </div>
                   <div class="data-box">
-                      <span>Main Pollutant</span>
-                      <p id="main-pollutant">PM2.5</p>
+                    <span>Main Pollutant</span>
+                    <p id="pollution-level">PM2.5</p>
                   </div>
                   <div class="data-box">
-                      <span>Wind</span>
-                      <p id="wind">12 km/h</p>
+                    <span>Wind</span>
+                    <p id="pollution-level">12 km/h</p>
                   </div>
                   <div class="data-box">
-                      <span>Humidity</span>
-                      <p id="humidity">65%</p>
+                    <span>Humidity</span>
+                    <p id="pollution-level">65%</p>
                   </div>
                   <div class="data-box">
-                      <span>Temperature</span>
-                      <p id="temperature">22°C</p>
+                    <span>Temperature</span>
+                    <p id="pollution-level">22°C</p>
+                  </div>
+
+                  <div class="data-box">
+                    <a href="{% url 'graficos' %}">
+                      <span>Check our graphics about the air</span>
+                    </a>
                   </div>
               </div>
           </div>
