@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from .models import Usuarios
 
 def home(request):
     return render(request, './usuarios/home.html')
@@ -9,3 +8,5 @@ def news(request):
     return render(request, './usuarios/news.html')
 def about(request):
     return render(request, './usuarios/about.html')
+def graficos(request):
+    return render(request, './usuarios/graficos.html')

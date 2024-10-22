@@ -22,5 +22,6 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('Airchecking',views.teste, name='aircheck'),
     path('news', views.news, name='news'),
-    path('about', views.about, name='about')
+    path('about', views.about, name='about'),
+    path('graficos', views.graficos, name='graficos')
 ]

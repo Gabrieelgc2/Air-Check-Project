@@ -29,10 +29,12 @@ body #corpohome {
     font-weight: bold;
     color: #ffffff;
     display: flex;
+    
 }
 
 .logo .logoair{
     width: 10%;
+    border-radius: 10px;
 }
 .nav-links {
     display: flex;
@@ -114,6 +116,39 @@ body #corpohome {
     transform: scale(1.1);
 }
 
+.botao-air-checking {
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: #193655;
+    color: #ffffff;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.botao-air-checking:hover {
+    transform: scale(1.1);
+    background-color: #0f2540;
+}
+
+
+
+a {
+    transition: background-color 0.5s;
+  }
+  
+  a:hover {
+    background-color: #005bb5;
+    border-radius: 50px;
+  }
+
+
+
+  
 @media (max-width: 1024px) {
     .header {
         flex-direction: column;
@@ -139,7 +174,7 @@ body #corpohome {
 
 @media (max-width: 768px) {
     .header {
-        flex-direction: column;
+        display: flex;
         justify-content: center;
         align-items: center;
         padding: 15px 40px;
@@ -179,18 +214,38 @@ body #corpohome {
     }
 
     .nav-links ul li a {
-        margin: 10px 0;
+        margin: 1px 0;
         padding: 12px 20px;
         width: 100%;
         text-align: center;
     }
+    
+    .home-img img{
+        border-radius: 50px;
+        max-width:250px;
+        max-height:250px;
+        width: auto;
+        height: auto;
+    }
+    .texto-body{
+        font-size: 10px;
+        margin-left: 8%;
+        margin-right: 5%;
+        font-weight: bold;
+        margin-bottom: 10%;
+        color: #193655;
+    }
+    .botao-check{
+        padding: 8px 15px;
+        border-radius: 20px;
+        background-color: #193655;
+        color: #ffffff;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        font-size: 1px;
+    }
 }
-
-a {
-    transition: background-color 0.5s;
-  }
-  
-  a:hover {
-    background-color: #005bb5;
-    border-radius: 50px;
-  }
