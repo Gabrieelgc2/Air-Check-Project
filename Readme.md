@@ -64,8 +64,7 @@ The **Air Check** project is an application for monitoring indoor air quality. I
 
 ### ScreenCast
 
-- **ScreenCast of the application running.**
-https://github.com/user-attachments/assets/134e1541-5bea-4afd-b7b6-3fe51fec4270
+[**ScreenCast of the application running.**](https://github.com/user-attachments/assets/134e1541-5bea-4afd-b7b6-3fe51fec4270)
 
 
 <hr>
