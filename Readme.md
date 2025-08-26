@@ -62,6 +62,13 @@ The **Air Check** project is an application for monitoring indoor air quality. I
 
 <hr>
 
+### ScreenCast
+
+- **ScreenCast of the application running.**"
+<img alt="ScreenCast" src="./assets/Air_Check.mp4">
+
+<hr>
+
 - Contribuintes para o código:
 - Gabriel Garcia Siqueira Andrade de Oliveira
 - Lucas Lima
