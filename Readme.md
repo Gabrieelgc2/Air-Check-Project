@@ -64,7 +64,7 @@ The **Air Check** project is an application for monitoring indoor air quality. I
 
 ### ScreenCast
 
-- **ScreenCast of the application running.**"
+- **ScreenCast of the application running.**
 <img alt="ScreenCast" src="./assets/Air_Check.mp4">
 
 <hr>
